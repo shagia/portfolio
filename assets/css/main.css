@@ -1,0 +1,154 @@
+/* Most important definitions critical to the website */
+
+#scene {
+	pointer-events: all !important;
+}
+
+.mainbody {
+	z-index: 1;
+	max-width: 1440px;
+
+}
+
+.loader {
+	position: fixed;
+	z-index: 2;
+	pointer-events: none;
+	background-image: cover;
+	background-color: white;
+	-webkit-animation: loaderend 3s forwards;
+}
+
+
+
+body {
+				background-color: #000000;
+				margin: 0px;
+				-webkit-font-smoothing: antialiased;
+			}
+
+#bg-water {
+	z-index: -10;
+	position: fixed;
+}
+
+/* Animations */
+
+@-webkit-keyframes BLINKING {
+	0% { opacity: 1; }
+	49% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes loaderend {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+/* Header */
+
+.topbar{
+	transform: translateX(10%);
+	z-index: 0;
+}
+
+
+.blink {
+	-webkit-animation: BLINKING 2s infinite;
+}
+
+/* Grid */
+
+.grid-sizer{
+	width: 50%;
+}
+
+.grid {
+	margin: 0 auto;
+	padding-top: 80px;
+}
+
+.grid-item { 
+	padding: 10px;
+	margin-bottom: 2.5vw;
+	float: left;
+	transition: ease 0.2s;
+}
+
+  		.grid-item a {
+	color: white;
+	text-decoration: none;
+
+	}
+
+	.grid-item:hover{
+		background-color: rgba(178,178,178,0.7);
+		text-decoration: none;
+		border: 1px none solid;
+		border-radius: 5px;
+		transition: ease 0.2s;
+	}
+
+	.grid-item img {
+	max-width: 250px;
+	}
+
+	.grid-item--width2 { width: 400px; }
+
+/* General styling */
+
+.title{
+	margin-top: 10px;
+	font-family: 'Michroma', sans-serif !important;
+	color: white;
+}
+
+.detail-title {
+	max-width: 80%;
+}
+
+
+.title-2{
+	font-size: 2rem;
+	margin-top: 10px;
+	font-family: 'Michroma', sans-serif !important;
+	color: white;
+}
+	.sub-detail {
+		margin-top: 10px;
+		font-family: 'Michroma', sans-serif !important;
+		color: white;
+		font-size: 10px;
+	}
+
+	.detail-subtitle {
+		margin-top: 10px;
+		font-family: 'Michroma', sans-serif !important;
+		color: white;
+		font-size: 16px;
+	}
+
+	.detail-description {
+		margin-top: 10px;
+		font-family: 'Michroma', sans-serif !important;
+		color: white;
+		font-size: 14px;
+	}
+
+.details{
+	padding-top: 80px;
+	margin: 0px 8% 0px 8%;
+}
+
+@media (max-width: 576px) { 
+	.details{
+	margin: 0px 0px 0px 0px;
+	}
+}
+
+
+.detail-divide {
+	border-color: white;
+	border-top-width: 5px;
+}
