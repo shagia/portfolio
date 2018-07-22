@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>{{ site.title }}{% if page.title %} • {{ page.title | escape }}{% endif %}</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css">
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-		<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
-		{% include meta.html %}
-	</head>
+<div class="row d-flex">
+	<div class="fixed-top">
+		<div class="topbar mt-4 text-left">
+			<button id="cameraZoomOut" value="FALSE" onclick="showMenu()" href="#">
+			<img src="{{ site.baseurl }}/img/logo.png">
+			</button>
+			<img class="blink" src="{{ site.baseurl }}/img/square.png">
+		</div>
+	</div>
+</div>
