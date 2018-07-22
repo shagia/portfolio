@@ -1,36 +1,40 @@
-{% assign sorted = (site.projects | sort: 'date') | reverse %}
+{% assign sorted = site.projects | sort: 'date' | reverse %}
 {% include head.html %}
 <body>
 	
 {% comment %} In order to stop the container from pushing the canvas background down due to the container not being in a fixed position, the canvas along with the scripts must come first. Giving the container a relative positioning could fix this. {% endcomment %}
-
 <div class="container-fluid mainbody">
 	{% include header.html %}
 	<div id="scene">
-		<div data-depth="0.1" class="grid">
-
-				{% for item in sorted %}
-				<div class="grid-item">
-					<a href="{{ site.baseurl }}{{ item.url }}.html" id="link">
-						<div id="image" class="">
-							<img class="img-fluid" src="img/yrsite.jpg">
+		<div data-depth="0.2" class="big-layer">
+			<div id="barba-wrapper">
+				<div class="barba-container">
+						<div data-depth="0.1" class="grid">
+							{% for item in sorted %}
+								<div class="grid-item">
+									<a href="{{ site.baseurl }}{{ item.url }}.html" id="link">
+										<div id="image" class="">
+											<img class="img-fluid" src="img/yrsite.jpg">
+										</div>
+										<div class="info">
+											<div class="title">
+												{{ item.title }}
+											</div>
+											<div class="sub-detail">
+												{{ item.date | date: "%Y" }} - {{ item.tags | join: ', ' }}
+											</div>
+										</div>
+									</a>
+								</div>
+							{% endfor %}
+							
 						</div>
-						<div class="info">
-							<div class="title">
-								{{ item.title }}
-							</div>
-							<div class="sub-detail">
-								{{ item.date | date: "%Y" }} - {{ item.tags | join: ', ' }}
-							</div>
-						</div>
-					</a>
 				</div>
-  				{% endfor %}
 				
+			</div>
 		</div>
 	</div>
 </div>
-
 {% include scripts.html %}
 {% include canvas.html %}
 </body>

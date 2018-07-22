@@ -370,8 +370,13 @@ THREE.OrbitControls = function ( object, domElement ) {
 		};
 
 	}();
+
+	$(document).ready(function(){
+		dollyOut(6);
+	});
+
 	// important button code
-	function zoomModel(isZoomOut, scale) {
+	/* function zoomModel(isZoomOut, scale) {
 				  if(isZoomOut){
 
 				      dollyOut(scale);
@@ -395,7 +400,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 		  				//console.log(menu.value);
 		  			}
 
-		  		});
+		  		}); 
 
 
 		  		//This sets the camera zoom based on the true or false value
@@ -412,7 +417,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 					//console.log("I'm activated!");
 		  		}
 
-		  		});
+		  		});*/
 
 				/* function showMenu(){
 					var menu = document.getElementById('MenuMaster');

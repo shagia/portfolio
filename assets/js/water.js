@@ -77,9 +77,9 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 				
 
-				/*document.addEventListener( 'mousemove', onDocumentMouseMove, false );*/
-				/* document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-				document.addEventListener( 'touchmove', onDocumentTouchMove, false ); */
+				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 
 				document.addEventListener( 'keydown', function( event ) {
 
@@ -286,7 +286,7 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 			}
 
-			/* function onDocumentTouchStart( event ) {
+			function onDocumentTouchStart( event ) {
 
 				if ( event.touches.length === 1 ) {
 
@@ -297,9 +297,9 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 				}
 
-			} */
+			} 
 
-			/* function onDocumentTouchMove( event ) {
+			function onDocumentTouchMove( event ) {
 
 				if ( event.touches.length === 1 ) {
 
@@ -310,7 +310,7 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 				}
 
-			} */
+			} 
 
 			function animate() {
 
