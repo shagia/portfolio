@@ -1,0 +1,45 @@
+{% assign sorted = (site.projects | sort: 'date') | reverse %}
+{% include head.html %}
+<body>
+	
+{% comment %} In order to stop the container from pushing the canvas background down due to the container not being in a fixed position, the canvas along with the scripts must come first. Giving the container a relative positioning could fix this. {% endcomment %}
+
+<div class="container-fluid mainbody">
+	{% include header.html %}
+	<div id="scene">
+		<div data-depth="0.1" class="grid">
+
+				<div class="row details">
+						<div class="col-12 col-md-5">
+							<section class="detail-title">
+								<div class="title-2">
+									{{ page.title }}
+									<hr class="detail-divide" />
+								</div>
+								<div class="detail-subtitle">
+									{{ page.date | date: "%Y" }} - {{ page.tags | join: ', ' }}
+								</div>
+							</section>
+							<section class="detail-description">
+								<div class="text-left">
+									<p>
+									{{ content }}</p>
+								</div>
+							</section>
+						</div>
+						<div class="col-12 col-md-7">
+							<section class="images text-center">
+								<div class="detail-image">
+									<img class="img-fluid" src="img/yrsite.jpg">
+								</div>								
+							</section>
+						</div>
+					</div>
+				
+		</div>
+	</div>
+</div>
+
+{% include scripts.html %}
+{% include canvas.html %}
+</body>
