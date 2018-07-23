@@ -40,16 +40,17 @@ $(document).ready(function() {
 
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
-parallaxInstance.scalar(10, 30);
 });
 
 $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
-    gutter: 10,
+    columnWidth: 400,
     fitWidth: true,
+    containerStyle: relative,
     transitionDuration: '0.2s',
 });
+
 
 
 
@@ -62,8 +63,9 @@ Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container
     $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
-        gutter: 10,
+        columnWidth: 400,
         fitWidth: true,
+        containerStyle: relative,
         transitionDuration: '0.2s',
     });
     $('.grid').masonry('reloadItems');

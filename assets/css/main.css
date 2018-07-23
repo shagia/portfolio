@@ -6,7 +6,7 @@
 
 .mainbody {
 	z-index: 1;
-	max-width: 1440px;
+	/* max-width: 1440px; */
 	position: absolute;
 
 }
@@ -85,7 +85,6 @@ body {
 /* Grid */
 
 .grid-sizer{
-	width: 50%;
 }
 
 .grid {
@@ -132,6 +131,10 @@ body {
 
 .detail-title {
 	max-width: 80%;
+}
+
+.container-container:hover{
+	margin: 0 auto;
 }
 
 

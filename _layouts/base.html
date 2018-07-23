@@ -9,26 +9,34 @@
 		<div data-depth="0.2" class="big-layer">
 			<div id="barba-wrapper">
 				<div class="barba-container">
-						<div data-depth="0.1" class="grid">
-							{% for item in sorted %}
-								<div class="grid-item">
-									<a href="{{ site.baseurl }}{{ item.url }}.html" id="link">
-										<div id="image" class="">
-											<img class="img-fluid" src="img/yrsite.jpg">
-										</div>
-										<div class="info">
-											<div class="title">
-												{{ item.title }}
+					<div class="grid">
+						<div class="row">
+							<div class="col-12">
+								<div class="">
+								{% for item in sorted %}
+									<div class="grid-item col-12 col-md-4">
+										<div class="container-container d-flex justify-content-center">
+										<a href="{{ site.baseurl }}{{ item.url }}.html" id="link">
+											<div id="image" class="">
+												<img class="img-fluid" src="{{ site.baseurl }}/assets/img/{{ item.coverimg }}">
 											</div>
-											<div class="sub-detail">
-												{{ item.date | date: "%Y" }} - {{ item.tags | join: ', ' }}
+											<div class="info">
+												<div class="title">
+													{{ item.title }}
+												</div>
+												<div class="sub-detail">
+													{{ item.date | date: "%Y" }} - {{ item.tags | join: ', ' }}
+												</div>
 											</div>
-										</div>
-									</a>
+										</a>
+									</div>
 								</div>
+								
 							{% endfor %}
-							
 						</div>
+						</div>
+						</div>
+					</div>
 				</div>
 				
 			</div>
