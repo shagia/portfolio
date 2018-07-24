@@ -11,11 +11,8 @@
 				<div class="barba-container">
 					<div class="grid">
 						<div class="row">
-							<div class="col-12">
-								<div class="">
 								{% for item in sorted %}
-									<div class="grid-item col-12 col-md-4">
-										<div class="container-container d-flex justify-content-center">
+									<div class="grid-item">
 										<a href="{{ site.baseurl }}{{ item.url }}.html" id="link">
 											<div id="image" class="">
 												<img class="img-fluid" src="{{ site.baseurl }}/assets/img/{{ item.coverimg }}">
@@ -30,10 +27,8 @@
 											</div>
 										</a>
 									</div>
-								</div>
 								
 							{% endfor %}
-						</div>
 						</div>
 						</div>
 					</div>

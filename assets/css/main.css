@@ -31,6 +31,7 @@ body {
 #bg-water {
 	z-index: -10;
 	position: fixed;
+
 }
 
 /* Animations */
@@ -65,6 +66,7 @@ body {
 
 .pge-transition {
 	animation: pgeTransition .3s forwards !important;
+
 }
 
 /* Header */
@@ -72,6 +74,7 @@ body {
 .topbar{
 	transform: translateX(10%);
 	z-index: 0;
+	
 }
 
 #logoo:hover{
@@ -101,7 +104,7 @@ body {
 }
 
 
-  		.grid-item a {
+  	.grid-item a {
 	color: white;
 	text-decoration: none;
 
@@ -166,6 +169,7 @@ body {
 	}
 
 .details{
+	padding-top: 80px;
 	margin: 0px 8% 0px 8%;
 }
 
