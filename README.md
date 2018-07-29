@@ -2,7 +2,7 @@
 
 A detailed README of my personal portfolio, located on [shagia.me](http://shagia.me).
 
-My portfolio is currently unfinished, but I'll be updating my change log to showcase it's progress.
+My portfolio is currently unfinished, but I'll be updating my change log to showcase it's progress. To view it now, [check here.](https://shagia.github.io/portfolio/)
 
 ##### Change Log
 > ### 1.0.1 (2018-07-29)
