@@ -1,14 +1,13 @@
-#shagia/portfolio
--
+# shagia/portfolio
 
 A detailed README of my personal portfolio, located on [shagia.me](http://shagia.me).
 
 My portfolio is currently unfinished, but I'll be updating my change log to showcase it's progress.
 
-#####Change Log
-> ###1.0.1 (2018-07-29)
+##### Change Log
+> ### 1.0.1 (2018-07-29)
 > 
-> #####`Added`
+> ##### `Added`
 > ---
 > Added **Change Log**
 > 
@@ -27,10 +26,10 @@ My portfolio is currently unfinished, but I'll be updating my change log to show
 > **Parallax.js** added on top of the grid just for a nice single layer Parallax effect. I may build on this with the three.js background.
 >
 > 
-> #####`Unreleased`
+> ##### `Unreleased`
 > ---
 > *Actually finishing the About page*
 > 
-> #####`Removed`
+> ##### `Removed`
 > ---
-> **LinkedIn** logo link from the original page.
+> **LinkedIn** logo link from the original page. 
