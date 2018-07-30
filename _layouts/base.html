@@ -1,8 +1,6 @@
 {% assign sorted = site.projects | sort: 'date' | reverse %}
 {% include head.html %}
 <body>
-	
-{% comment %} In order to stop the container from pushing the canvas background down due to the container not being in a fixed position, the canvas along with the scripts must come first. Giving the container a relative positioning could fix this. {% endcomment %}
 <div class="container-fluid mainbody">
 	{% include header.html %}
 	<div id="scene">
