@@ -13,7 +13,7 @@
                                 <section class="detail-title">
                                     <div class="title-2">
                                         {{ page.title }}
-                                        <hr class="detail-divide" />
+                                       {% comment %} <hr class="detail-divide" /> {% endcomment %}
                                     </div>
                                     <div class="detail-subtitle">
                                         {{ page.date | date: "%Y" }} - {{ page.tags | join: ', ' }}
@@ -23,7 +23,7 @@
                                     <div class="text-left">
                                         <p>
                                             {{ content }}</p>
-                                            <p class="blink text-center">■</p>
+                                            <p class="blink text-left">■</p>
                                     </div>
                                 </section>
                             </div>

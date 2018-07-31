@@ -1,7 +1,7 @@
 ---
 title:  "smallBar"
 date:   2018-05-22 00:00:00 -0700
-tags: [Personal, Design, UI, Front-end]
+tags: [Personal, Design, UI, Utility]
 coverimg: smallbar.jpg
 imgfolder: SMB
 ---
