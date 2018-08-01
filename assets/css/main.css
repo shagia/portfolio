@@ -141,7 +141,6 @@ body {
     float: left;
     transition: ease 0.2s;
     
-    mix-blend-mode: difference !important; 
 }
 
 
