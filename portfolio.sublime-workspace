@@ -24,7 +24,7 @@
 			"file": "_projects/smallbar.md",
 			"settings":
 			{
-				"buffer_size": 1883,
+				"buffer_size": 1881,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -33,7 +33,7 @@
 			"file": "_layouts/base-content.html",
 			"settings":
 			{
-				"buffer_size": 2285,
+				"buffer_size": 2313,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -51,7 +51,7 @@
 			"file": "assets/css/main.css",
 			"settings":
 			{
-				"buffer_size": 3982,
+				"buffer_size": 3989,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -105,6 +105,7 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/shagia/Documents/development/portfolio-final"
 	],
 	"file_history":
 	[
@@ -150,7 +151,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -189,15 +190,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1883,
+						"buffer_size": 1881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								134
+								0,
+								0
 							]
 						],
 						"settings":
@@ -217,27 +218,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2285,
+						"buffer_size": 2313,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36,
-								36
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -266,7 +268,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -275,27 +277,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3982,
+						"buffer_size": 3989,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3143,
-								3149
+								2543,
+								2543
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1993.0,
+						"translation.y": 1214.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
