@@ -9,12 +9,15 @@
                 <div id="barba-wrapper">
                     <div class="barba-container">
                         <div class="row details">
-                            <div class="col-12 col-md-5">
+                            <div class="col-12 col-md-6">
+                                <article>
                                 <section class="detail-title">
+                                
                                     <div class="title-2">
                                         {{ page.title }}
                                        {% comment %} <hr class="detail-divide" /> {% endcomment %}
                                     </div>
+
                                     <div class="detail-subtitle">
                                         {{ page.date | date: "%Y" }} - {{ page.tags | join: ', ' }}
                                     </div>
@@ -27,17 +30,20 @@
                                     </div>
                                 </section>
                             </div>
-                            <div class="col-12 col-md-7">
+                            <div class="col-12 col-md-6">
                                 <section class="images text-center">
-                                    <div class="detail-image">
-                                    	{% for image in site.static_files %}
-                  						{% assign imgpath = 'img/' | append: page.imgfolder %}
-                  						{% if image.path contains imgpath %}
+                                    {% for image in site.static_files %}
+                                        {% assign imgpath = 'img/' | append: page.imgfolder %}
+                                        {% if image.path contains imgpath %}
+                                    <figure class="detail-image">
+                                    	
                                         <img class="img-fluid pt-2 pb-2" src="{{ site.baseurl }}{{ image.path }}">
-                                        {% endif %}
-						                {% endfor %}
-                                    </div>
+                                        
+                                    </figure>
+                                    {% endif %}
+                                        {% endfor %}
                                 </section>
+                                </article>
                             </div>
                         </div>
                     </div>
