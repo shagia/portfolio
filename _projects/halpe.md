@@ -3,6 +3,7 @@ title:  "halpe"
 date:   2017-09-02 00:00:00 -0700
 tags: [Design, Branding]
 coverimg: halpe.jpg
+imgfolder: HLPE
 ---
 halpe is an Argentinan-based artist and friend who came to me looking for a rebrand, EP artwork, and a new website. Our work was never finished, but I enjoyed what we worked on, so I figure I'd feature our outcomes here with permission. He told me beforehand that it was a 'maybe' thing anyway, but I wanted to do something pretty cool.
 
