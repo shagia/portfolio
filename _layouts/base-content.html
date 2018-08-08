@@ -35,7 +35,7 @@
                                     {% for image in site.static_files %}
                                         {% assign imgpath = 'img/' | append: page.imgfolder %}
                                         {% if image.path contains imgpath %}
-                                    <figure class="detail-image">
+                                    <figure name="{{ page.title }}" class="detail-image">
                                     	
                                         <img class="img-fluid pt-2 pb-2" src="{{ site.baseurl }}{{ image.path }}">
                                         
