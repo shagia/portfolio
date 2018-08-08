@@ -1,4 +1,14 @@
 $(document).ready(function() {
+
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 40,
+    gutter: 10,
+    fitWidth: true,
+    transitionDuration: '0.2s',
+});
+
  var cssTransition = Barba.BaseTransition.extend({
     start: function() {
       Promise
@@ -32,14 +42,6 @@ var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
 });
 
-$('.grid').masonry({
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: 40,
-    gutter: 10,
-    fitWidth: true,
-    transitionDuration: '0.2s',
-});
 
 
 

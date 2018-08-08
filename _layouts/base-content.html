@@ -1,46 +1,57 @@
-{% assign sorted = site.projects | sort: 'date' | reverse %}
 {% include head.html %}
+
 <body>
-	
-{% comment %} In order to stop the container from pushing the canvas background down due to the container not being in a fixed position, the canvas along with the scripts must come first. Giving the container a relative positioning could fix this. {% endcomment %}
-<div class="container-fluid mainbody">
-	{% include header.html %}
-	<div id="scene">
-		<div data-depth="0.2" class="big-layer">
-			<div id="barba-wrapper">
-				<div class="barba-container">
-						
-							<div class="row details">
-								<div class="col-12 col-md-4">
-									<section class="detail-title">
-										<div class="title-2">
-											{{ page.title }}
-											<hr class="detail-divide" />
-										</div>
-										<div class="detail-subtitle">
-											{{ page.date | date: "%Y" }} - {{ page.tags | join: ', ' }}
-										</div>
-									</section>
-									<section class="detail-description">
-										<div class="text-left">
-											<p>
-											{{ content }}</p>
-										</div>
-									</section>
-								</div>
-								<div class="col-12 col-md-7">
-									<section class="images text-center">
-										<div class="detail-image">
-											<img class="img-fluid" src="img/yrsite.jpg">
-										</div>
-									</section>
-								</div>
-							</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-{% include scripts.html %}
-{% include canvas.html %}
+    
+    <div class="container-fluid mainbody">
+        {% include header.html %}
+        <div id="scene">
+            <div data-depth="0.2" class="big-layer">
+                <div id="barba-wrapper">
+                    <div class="barba-container">
+                        <div class="row details">
+                            <div class="col-12 col-md-5">
+                                <article>
+                                <section class="detail-title">
+                                
+                                    <div class="title-2">
+                                        {{ page.title }}
+                                       {% comment %} <hr class="detail-divide" /> {% endcomment %}
+                                    </div>
+
+                                    <div class="detail-subtitle">
+                                        {{ page.date | date: "%Y" }} - {{ page.tags | join: ', ' }}
+                                    </div>
+                                </section>
+                                <section class="detail-description">
+                                    <div class="text-left">
+                                        <p>
+                                            {{ content }}</p>
+                                            <p class="blink text-left">■</p>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="d-none d-md-inline col-md-2">
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <section class="images text-center">
+                                    {% for image in site.static_files %}
+                                        {% assign imgpath = 'img/' | append: page.imgfolder %}
+                                        {% if image.path contains imgpath %}
+                                    <figure name="{{ page.title }}" class="detail-image">
+                                    	
+                                        <img class="img-fluid pt-2 pb-2" src="{{ site.baseurl }}{{ image.path }}">
+                                        
+                                    </figure>
+                                    {% endif %}
+                                        {% endfor %}
+                                </section>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include scripts.html %} {% include canvas.html %}
 </body>

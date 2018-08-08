@@ -77,8 +77,8 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 				
 
-				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-				/*document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+				/*document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
 				document.addEventListener( 'touchmove', onDocumentTouchMove, false );*/
 
 				document.addEventListener( 'keydown', function( event ) {
@@ -108,15 +108,6 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 					heightmapVariable.material.uniforms.viscosityConstant.value = effectController.viscosity;
 
 				};
-
-				/* gui.add( effectController, "mouseSize", 1.0, 100.0, 1.0 ).onChange( valuesChanger );
-				gui.add( effectController, "viscosity", 0.0, 0.1, 0.001 ).onChange( valuesChanger ); 
-				var buttonSmooth = {
-				    smoothWater: function() {
-					smoothWater();
-				    }
-				};
-				gui.add( buttonSmooth, 'smoothWater' );*/
 
 
 				initWater();
@@ -321,24 +312,7 @@ if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 				
 
 			}
-			/* 
-			var intialz = camera.position.y;
-			var zoomfactor = 20;
-			function cameraZoomOut() {
-			  console.log("Camera Zoom Out Function Clicked");
-			  camera.position.y += zoomfactor;
-			  if(camera.position.y > (intialz - (zoomfactor * 0.3))) {// stop zooming at 10x zoom
-			      requestAnimationFrame( cameraZoomOut );
-			  }
-				  render();
-}; */
-
-			/* function cameraZoomOut() {
-				      console.log("Camera Zoom In Function Clicked");
-				      camera.position.y += 15;
-				      requestAnimationFrame( cameraZoomOut );
-				      render();
-				}; */
+	
 
 
 			function render() {
