@@ -9,7 +9,7 @@ My portfolio is currently unfinished, but I'll be updating my change log to show
 
  ##### `Added`
  ---
- Updated visual theme
+ Updated visual theme for stronger contrast / readability
  
  A barebones set of new project pages
  
