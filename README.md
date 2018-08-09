@@ -19,7 +19,7 @@ My portfolio is currently unfinished, but I'll be updating my change log to show
  
  Slideshow function for images
  
- Low-end network optimization (Currently, the grid system initializes before the images load, there's no type of pre-loading happening anywhere, and image sizing is all over the place)
+ General network optimization (Currently, the grid system initializes before the images load, there's no type of pre-loading happening anywhere, and image sizing is all over the place)
  
  ##### `Removed`
  ---
