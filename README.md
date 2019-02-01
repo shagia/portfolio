@@ -5,31 +5,22 @@ A detailed README of my personal portfolio, located on [shagia.me](http://shagia
 My portfolio is currently unfinished, but I'll be updating my change log to showcase it's progress. To view it now, [check here.](https://shagia.github.io/portfolio/)
 
 ##### Change Log
-### 1.0.1 (2018-07-29)
+### 1.1 (2018-08-09)
 
  ##### `Added`
  ---
- Added **Change Log**
+ Updated visual theme for stronger contrast / readability
  
- Updated **visual identity**
- 
- Added **eight new and legacy projects**
- 
- **Copy** and **Images** for all projects added
- 
- **Jekyll** front-end finally integrated into what was just a blank, modified three.js website with a LinkedIn link
- 
- **Masonry.js** added to allow Jekyll to print each project onto the homepage as a grid
- 
- **Barba.js** containers added for CSS transitions between PJAX requests.
- 
- **Parallax.js** added on top of the grid just for a nice single layer Parallax effect. I may build on this with the three.js background.
-
+ A barebones set of new project pages
  
  ##### `Unreleased`
  ---
  *Actually finishing the About page*
  
+ Slideshow function for images
+ 
+ General network optimization (Currently, the grid system initializes before the images load, there's no type of pre-loading happening anywhere, and image sizing is all over the place)
+ 
  ##### `Removed`
  ---
- **LinkedIn** logo link from the original page. 
+Tons of placeholder content

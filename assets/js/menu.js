@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  
+$('.grid').imagesLoaded().progress( function() {
+
+
   $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
@@ -7,6 +11,8 @@ $(document).ready(function() {
     gutter: 10,
     fitWidth: true,
     transitionDuration: '0.2s',
+});
+
 });
 
  var cssTransition = Barba.BaseTransition.extend({
@@ -52,7 +58,10 @@ Barba.Dispatcher.on('linkClicked', function(currentStatus, oldStatus, container)
 });
 
 Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
-    $('.grid').masonry({
+    
+    $('.grid').imagesLoaded().progress( function() {
+
+      $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
         columnWidth: 40,
@@ -61,5 +70,8 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
         transitionDuration: '0.2s',
     });
     $('.grid').masonry('reloadItems');
+});
+
+    
 
 });
